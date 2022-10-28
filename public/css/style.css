@@ -1,0 +1,26 @@
+.student-single img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+    object-fit: cover;
+}
+
+.student-single {
+    text-align: center;
+}
+
+.content {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.content h1{
+    text-transform: uppercase;
+}
+
+.details p{
+    text-align: left;
+    font-size: 20px;
+}

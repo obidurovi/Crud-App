@@ -1,0 +1,32 @@
+<!-- For Showing single students info -->
+
+<div class="container my-5 student-single">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <a class="btn btn-sm btn-primary" href="/">Back</a>
+            <br>
+            <br>
+            <div class="card shadow">
+                <div class="card-body">
+                    <% if ( singledata.image === 'av.jpg' ) { %>
+                        <img src="/images/av.jpg" alt="">
+
+                    <% } else { %>
+                        <img src="/images/<%= singledata.image %> " alt="">
+                    <% } %>
+                    <div class="content">
+                        <h1><%= singledata.name %> </h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="details">
+                                    <p>Phone: <%= singledata.phone %> </p>
+                                    <p>Email : <%= singledata.email %> </p>
+                                    <p>Gender : <%= singledata.gender %> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

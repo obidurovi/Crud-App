@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row justify-content-center my-5">
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-header">
+                    <div>
+                        <a href="/" class="btn btn-primary">Back</a>
+                    </div>
+                    <h1 class="h3">Update User Info</h1>
+                </div>
+                <div class="card-body">
+                    <form action="/edit/<%= editData.id %> " method="post" enctype="multipart/form-data">
+                        <div class="my-1">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" value=" <%= editData.name %>" name="name" id="">
+                        </div>
+                        <div class="my-1">
+                            <label for="">Age</label>
+                            <input type="text" class="form-control" name="age"  value=" <%= editData.age %>" id="">
+                        </div>
+                        <div class="my-1">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control"  value=" <%= editData.email %>" name="email" id="">
+                        </div>
+                        <div class="my-1">
+                            <label for="">Phone</label>
+                            <input type="text" class="form-control"  value=" <%= editData.phone %>" name="phone" id="">
+                        </div>
+                        <div class="my-1">
+                            <label for="Gender">Gender</label>
+                            <select name="gender"  value=" <%= editData.gender %>" id="Gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <label for="">Location</label>
+                            <input name="location" type="text" value="<%= editData.location %> " class="form-control">
+                        </div>
+                        <div class="my-1">
+                            <label for="">Photo</label>
+                           <input class="form-control" name="image"  value="<%= editData.photo %>" type="file">
+                        </div>
+                        <button class="btn btn-primary w-100" type="submit">Update Now</button>
+                    </form>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
